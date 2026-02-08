@@ -17,7 +17,9 @@ public record Task(
         LocalDate createDate,
         @NotNull
         @Future
+        @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
         LocalDate deadlineDate,
+        @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
         LocalDate doneDate,
         TaskStatus status,
         @NotNull
